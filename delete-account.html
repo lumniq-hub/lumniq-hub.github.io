@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedMate – Delete Account</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f9fafb;
+      color: #1a1a2e;
+      line-height: 1.7;
+      padding: 24px 16px 64px;
+    }
+
+    .card {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      padding: 48px 40px;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #4f6ef7, #7c3aed);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .logo-text {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+
+    .logo-text span {
+      color: #4f6ef7;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+    }
+
+    .effective-date {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-top: 36px;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #f0f0ff;
+    }
+
+    p {
+      margin-bottom: 14px;
+      font-size: 15px;
+      color: #374151;
+    }
+
+    ul {
+      margin: 10px 0 14px 20px;
+      font-size: 15px;
+      color: #374151;
+    }
+
+    li { margin-bottom: 6px; }
+
+    .highlight-box {
+      background: #f0f4ff;
+      border-left: 4px solid #4f6ef7;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 15px;
+      color: #374151;
+    }
+
+    .warning-box {
+      background: #fff5f5;
+      border-left: 4px solid #ef4444;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 15px;
+      color: #374151;
+    }
+
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      margin: 10px 0 14px 0;
+      padding: 0;
+    }
+
+    .steps li {
+      counter-increment: step;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 12px;
+      font-size: 15px;
+      color: #374151;
+    }
+
+    .steps li::before {
+      content: counter(step);
+      background: #4f6ef7;
+      color: #fff;
+      font-weight: 700;
+      font-size: 13px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .contact-box {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 36px;
+    }
+
+    .contact-box p { margin-bottom: 4px; }
+
+    a { color: #4f6ef7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .card { padding: 28px 20px; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo-row">
+      <div class="logo-icon">💊</div>
+      <div class="logo-text">Med<span>Mate</span></div>
+    </div>
+
+    <h1>Delete Your Account</h1>
+    <p class="effective-date">Developed by Lumniq Studio</p>
+
+    <div class="highlight-box">
+      You can delete your MedMate account and all associated data directly inside the app — no need to contact support.
+    </div>
+
+    <h2>How to Delete Your Account In-App</h2>
+    <ol class="steps">
+      <li>Open the <strong>MedMate</strong> app on your device.</li>
+      <li>Tap the <strong>Settings</strong> tab at the bottom of the screen.</li>
+      <li>Scroll down to the <strong>Account</strong> section.</li>
+      <li>Tap <strong>Delete account</strong> (shown in red).</li>
+      <li>Review the list of data that will be deleted, then tap <strong>Continue</strong>.</li>
+      <li>Confirm by tapping <strong>Delete forever</strong>.</li>
+    </ol>
+
+    <p>Deletion is immediate. Once confirmed, your account and all data are permanently removed — there is no recovery option.</p>
+
+    <h2>What Gets Deleted</h2>
+    <p>Deleting your account permanently removes all of the following with no retention period:</p>
+    <ul>
+      <li>Your Firebase authentication account</li>
+      <li>All medications and schedules</li>
+      <li>All dose history and adherence logs</li>
+      <li>All refill logs</li>
+      <li>All symptom entries</li>
+      <li>All profile data</li>
+    </ul>
+
+    <div class="warning-box">
+      <strong>This action cannot be undone.</strong> Export or note any data you want to keep before deleting your account.
+    </div>
+
+    <h2>What Is Not Deleted</h2>
+    <ul>
+      <li><strong>Anonymous crash reports</strong> — crash data collected by Firebase Crashlytics does not contain personally identifiable information and is retained for debugging purposes per Google's data retention policy.</li>
+      <li><strong>Aggregated analytics</strong> — non-identifiable usage statistics collected by Firebase Analytics are retained per Google's policy.</li>
+    </ul>
+
+    <h2>Can't Access the App?</h2>
+    <p>If you are unable to sign in to your account to use the in-app deletion flow, contact us and we will delete your account manually within 30 days.</p>
+
+    <div class="contact-box">
+      <p><strong>Lumniq Studio</strong></p>
+      <p>Email: <a href="mailto:akhitajmun@gmail.com">akhitajmun@gmail.com</a></p>
+      <p>Subject: "Delete my MedMate account"</p>
+      <p style="margin-top:10px; font-size:14px; color:#6b7280;">Please include the email address associated with your account so we can locate and remove it.</p>
+    </div>
+  </div>
+</body>
+</html>
